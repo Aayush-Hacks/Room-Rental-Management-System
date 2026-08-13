@@ -1,7 +1,6 @@
 <?php
 /**
  * login_process.php
- * -----------------------------------------------------------------
  * Handles POST from login.php.
  * Validates credentials and starts a session on success.
  * -----------------------------------------------------------------
