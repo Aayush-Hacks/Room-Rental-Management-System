@@ -83,7 +83,7 @@ $faqs = [
 </head>
 <body>
 
-<!-- ========================= HEADER ============================== -->
+<!-- ========================= HEADER =============================== -->
 <header class="header">
   <div class="container header-inner">
     <a href="<?php echo BASE_URL; ?>" class="brand">
