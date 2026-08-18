@@ -3,7 +3,7 @@ require_once __DIR__ . '/../includes/auth.php';
 require_role('admin');
 require_once __DIR__ . '/../includes/db.php';
 
-// --- Core stat queries (same as before) ---
+// --- Core stat queries (same as before) ----
 $totalUsers = (int) $pdo->query("SELECT COUNT(*) FROM users")->fetchColumn();
 $totalLandlords = (int) $pdo->query("SELECT COUNT(*) FROM users WHERE role = 'landlord'")->fetchColumn();
 $totalTenants = (int) $pdo->query("SELECT COUNT(*) FROM users WHERE role = 'tenant'")->fetchColumn();
@@ -448,7 +448,7 @@ require_once __DIR__ . '/../includes/header.php';
   </div>
 </div>
 
-<!-- ───── Bottom section: Recent complaints + Recent activity ───── -->
+<!-- ───── Bottom section: Recent complaints + Recent activities ───── -->
 <div class="dash-columns">
   <?php if (!empty($recentComplaints)): ?>
   <div class="panel">
