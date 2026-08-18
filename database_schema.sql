@@ -86,12 +86,7 @@ CREATE TABLE IF NOT EXISTS `bookings` (
   FOREIGN KEY (`room_id`) REFERENCES `rooms`(`room_id`) ON DELETE CASCADE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
--- =====================================================================
--- NOTE: If the `bookings` table already exists in your database (i.e. you
--- created it before the cancellation_reason column was added), run this
--- once in phpMyAdmin / MySQL to add the new column:
---   ALTER TABLE `bookings` ADD COLUMN `cancellation_reason` TEXT NULL AFTER `status`;
--- =====================================================================
+
 
 -- =====================================================================
 -- 6. Favorites (tenant saves a room)
@@ -149,7 +144,7 @@ CREATE TABLE IF NOT EXISTS `notifications` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- =====================================================================
--- Seed data — demo accounts
+--  demo accounts
 -- =====================================================================
 -- Passwords: admin123 / landlord123 / tenant123  (bcrypt hashes)
 INSERT INTO `users` (`full_name`, `email`, `phone`, `password`, `role`, `verification_status`, `created_at`)
