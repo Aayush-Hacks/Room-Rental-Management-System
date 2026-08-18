@@ -159,7 +159,7 @@ function render_citizenship_badge(?string $status): string
 /**
  * Check that a password meets the strong-password policy:
  * at least 8 characters, containing an uppercase letter, a lowercase
- * letter, a number, and a symbol.
+ * letter, a number, and a symbol..
  */
 function is_strong_password(string $password): bool
 {
@@ -189,7 +189,7 @@ function render_avatar(string $profilePicture, string $fullName, int $size = 36,
  *
  * @param string $role  The role name ('admin', 'landlord', 'tenant')
  * @param bool   $showLabel  Whether to show the role name text next to the icon
- * @return string  HTML for the role badge
+ * @return string  HTML for the role badges.
  */
 function render_role_badge(string $role, bool $showLabel = true): string
 {
