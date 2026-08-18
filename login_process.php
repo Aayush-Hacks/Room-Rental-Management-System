@@ -3,7 +3,7 @@
  * login_process.php
  * Handles POST from login.php.
  * Validates credentials and starts a session on success.
- * -----------------------------------------------------------------
+
  */
 
 require_once __DIR__ . '/includes/auth.php';
